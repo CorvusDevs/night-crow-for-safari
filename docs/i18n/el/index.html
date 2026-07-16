@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Night Crow, Σκοτεινότητα, σωστά εκτελεσμένη</title>
+    <title>Night Crow, Το σκοτάδι, όπως πρέπει</title>
     <meta name="description" content="Έξυπνη, εγγενής σκοτεινή λειτουργία για κάθε ιστοσελίδα στο Safari. Δυναμική αναδιάταξη χρωμάτων που κρατά τις φωτογραφίες πιστές και το κείμενο ευανάγνωστο,…">
     <link rel="canonical" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/el/">
     <link rel="alternate" hreflang="ar" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ar/">
@@ -75,7 +75,7 @@
     <link rel="alternate" hreflang="zh-Hant" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/zh_TW/">
     <link rel="alternate" hreflang="x-default" href="https://corvusdevs.github.io/Night-Crow-For-Safari/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Night Crow, Σκοτεινότητα, σωστά εκτελεσμένη">
+    <meta property="og:title" content="Night Crow, Το σκοτάδι, όπως πρέπει">
     <meta property="og:description" content="Έξυπνη, εγγενής σκοτεινή λειτουργία για κάθε ιστοσελίδα στο Safari. Δυναμική αναδιάταξη χρωμάτων που κρατά τις φωτογραφίες πιστές και το κείμενο ευανάγνωστο,…">
     <meta property="og:image" content="https://corvusdevs.github.io/Night-Crow-For-Safari/og-image.png">
     <meta property="og:url" content="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/el/">
@@ -91,7 +91,7 @@
         "operatingSystem": "macOS, iOS, iPadOS",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Browser Extension",
-        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunrise-to-sunset scheduling.",
+        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
         "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
         "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
         "offers": { "@type": "Offer", "price": "0.99", "priceCurrency": "USD" },
@@ -159,6 +159,13 @@
         .glyph { width: 34px; height: 34px; border-radius: 9px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); }
         .glyph svg { width: 19px; height: 19px; }
 
+        .features-list { margin-top: 34px; display: flex; flex-direction: column; gap: 4px; }
+        .feature-row { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start; padding: 16px 18px; border-radius: 12px; }
+        .feature-row:hover { background: rgba(155,108,255,0.06); }
+        .feature-row__icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); box-shadow: 0 0 16px rgba(155,108,255,0.12); }
+        .feature-row__icon svg { width: 20px; height: 20px; }
+        .feature-row__body h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+        .feature-row__body p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
         .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
         .step { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
         .stepnum { width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
@@ -242,7 +249,7 @@
         <section class="wrap hero">
             <div>
                 <h1><span data-i18n="idx_tagline">Σκοτεινό θέμα για κάθε ιστοσελίδα</span><br><span class="grad">Night Crow For Safari</span></h1>
-                <p class="sub" data-i18n="hero_sub">Έξυπνη, εγγενής σκοτεινή λειτουργία για κάθε ιστοσελίδα στο Safari. Δυναμική αναδιάταξη χρωμάτων που κρατά τις φωτογραφίες πιστές και το κείμενο ευανάγνωστο, με κανόνες ανά ιστότοπο, προεπιλογές και προγραμματισμό από την ανατολή έως τη δύση.</p>
+                <p class="sub" data-i18n="hero_sub">Έξυπνη, εγγενής σκοτεινή λειτουργία για κάθε ιστοσελίδα στο Safari. Δυναμική αναδιάταξη χρωμάτων που κρατά τις φωτογραφίες πιστές και το κείμενο ευανάγνωστο, με κανόνες ανά ιστότοπο, προεπιλογές και προγραμματισμό από τη δύση έως την ανατολή.</p>
                 <div class="ctas">
                     <a class="cta" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_ios">Λήψη για iOS</a>
                     <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac">Λήψη για macOS</a>
@@ -256,26 +263,84 @@
 
         <section class="wrap block" id="features">
             <div class="label" data-i18n="sec_features_label">Λειτουργίες</div>
-            <h2 class="title" data-i18n="sec_features_title">Σκοτεινότητα, σωστά εκτελεσμένη</h2>
+            <h2 class="title" data-i18n="sec_features_title">Το σκοτάδι, όπως πρέπει</h2>
             <div class="grid">
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">Δυναμική λειτουργία</h3><p data-i18n="f1_d">Διαβάζει τα χρώματα κάθε ιστότοπου και τα ξαναχτίζει σε σκούρο θέμα. Οι φωτογραφίες παραμένουν πιστές, το κείμενο ευανάγνωστο.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">Τέσσερις λειτουργίες θεματικής</h3><p data-i18n="f2_d">Δυναμικό, Φίλτρο, Φίλτρο+ και Στατικό. Επιλέξτε διαφορετικό ανά site ανάλογα με το τι ταιριάζει καλύτερα.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">Προσαρμογή για το σκούρο θέμα</h3><p data-i18n="f3_d">Ενεργοποιήστε, απενεργοποιήστε ή προσαρμόστε με ακρίβεια οποιαδήποτε ιστοσελίδα, έως και ένα ενιαίο τμήμα όπως το example.com/docs.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">Έξυπνη προγραμματισμός</h3><p data-i18n="f4_d">Ακολουθήστε την εμφάνιση του συστήματός σας, ένα χρονικό παράθυρο ή την ηλιοβασίλεση έως την ανατολή στη θέση σας.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">Προεπιλογές θέματος</h3><p data-i18n="f5_d">Διαμάντι, Μεσάνυχτα, Σλάιτ, Σέπια νύχτα και Υψηλή αντίθεση. Μια κίνηση ανά κούμπωμα.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">Κάσες CSS & γραμματοσειρές</h3><p data-i18n="f6_d">Ενεργοποιήστε το δικό σας CSS ανά site, αλλάξτε τη γραμματοσειρά της σελίδας και βελτιώστε την ανάγνωση του κειμένου με μια γραμμή.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">Επίσης σκότεινα ευαίσθητα</h3><p data-i18n="f7_d">Οι ιστοσελίδες που παρέχουν τη δική τους σκούρα θεματική εντοπίζονται και αφεθούν ήρεμες, χωρίς διπλή σκούραχρωση.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">Ιδιωτικό από τη φύση του</h3><p data-i18n="f8_d">Χωρίς λογαριασμό, χωρίς αναλυτικά, χωρίς παρακολούθηση. Τίποτα από την περιήγησή σας δεν εγκαταλείγει το συσκευή σας.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">Κανόνες ανά ιστότοπο</h3><p data-i18n="f3_d">Ενεργοποιήστε, απενεργοποιήστε ή προσαρμόστε με ακρίβεια οποιαδήποτε ιστοσελίδα, έως και ένα ενιαίο τμήμα όπως το example.com/docs.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">Έξυπνος προγραμματισμός</h3><p data-i18n="f4_d">Ακολουθήστε την εμφάνιση του συστήματός σας, ένα χρονικό παράθυρο ή την ηλιοβασίλεση έως την ανατολή στη θέση σας.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">Προεπιλογές θέματος</h3><p data-i18n="f5_d">Χαμηλός φωτισμός, Μεσάνυχτα, Σχιστόλιθος, Νυχτερινή σέπια και Υψηλή αντίθεση. Ένα κλικ το καθένα.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">Προσαρμοσμένο CSS & γραμματοσειρές</h3><p data-i18n="f6_d">Ενεργοποιήστε το δικό σας CSS ανά site, αλλάξτε τη γραμματοσειρά της σελίδας και βελτιώστε την ανάγνωση του κειμένου με μια γραμμή.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">Αναγνωρίζει ήδη σκούρους ιστότοπους</h3><p data-i18n="f7_d">Οι ιστοσελίδες που παρέχουν τη δική τους σκούρα θεματική εντοπίζονται και αφεθούν ήρεμες, χωρίς διπλή σκούραχρωση.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">Ιδιωτικό από τη φύση του</h3><p data-i18n="f8_d">Χωρίς λογαριασμό, χωρίς αναλυτικά, χωρίς παρακολούθηση. Τίποτα από την περιήγησή σας δεν εγκαταλείπει τη συσκευή σας.</p></div>
+            </div>
+            <div class="features-list">
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-5M4 12V3M12 21v-9M12 8V3M20 21v-3M20 14V3"/><circle cx="4" cy="14" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="16" r="2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl1_t">Ρυθμίστε τους διακόπτες</h3>
+                        <p data-i18n="fl1_d">Φωτεινότητα, αντίθεση, σέπια και ασπρόμαυρο, παγκοσμίως ή ανά site, απευθείας από το παράθυρο αναμονής της γραμμής εργαλείων.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="9" cy="10" r="2"/><path d="M15 8l3 3-3 3"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl2_t">Έξυπνη διαχείριση λογότυπου</h3>
+                        <p data-i18n="fl2_d">Τα σκούρα λογότυπα και εικονίδια αναλύονται ανά pixel και αντιστρέφονται μόνο όταν βοηθά, ώστε οι φωτογραφίες να μην αγγίζονται ποτέ.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h.01M11 15h2M17 15h.01M7 11h.01M11 11h.01M15 11h.01"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl3_t">Συντόμευση πληκτρολογίου</h3>
+                        <p data-i18n="fl3_d">Ενεργοποιήστε το Night Crow σε οποιαδήποτε σελίδα με ένα πάτημα. Μπορείτε να αλλάξετε τη συντόμευση στις ρυθμίσεις επεκτάσεων του Safari.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M12 15l-4-4M12 15l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl4_t">Δημιουργία αντιγράφων ασφαλείας και επαναφορά</h3>
+                        <p data-i18n="fl4_d">Εξαγάγετε όλες τις ρυθμίσεις σας σε αρχείο και εισάγετέ τις σε έναν άλλο Mac ή μετά από επανεγκατάσταση.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl5_t">Ευανάγνωστες φόρμες παντού</h3>
+                        <p data-i18n="fl5_d">Τα πεδία εισαγωγής, οι λίστες επιλογών, οι ράβδοι κύλισης και ακόμη και τα αυτοσυμπληρούμενα πεδία ακολουθούν το θέμα, αντί να αναβοσβήνουν σε λευκό ή κίτρινο χρώμα.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><rect x="7" y="8" width="10" height="8" rx="1.5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl6_t">Κατασκευασμένο για το σύγχρονο web</h3>
+                        <p data-i18n="fl6_d">Εφαρμόζει θέμα και σε ενσωματωμένα πλαίσια και web components, τα σημεία που τα περισσότερα εργαλεία σκούρας λειτουργίας παραλείπουν.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl7_t">Προσαρμοσμένο για την προσβασιμότητα</h3>
+                        <p data-i18n="fl7_d">Σέβεται τις ρυθμίσεις Αύξηση Αντίθεσης και Αναγκαστικά Χρώματα και διατηρεί το επανκαθορισμένο κείμενο σε ένα όριο αντίθεσης που αντιλαμβάνεται το ανθρώπινο μάτι.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><text x="4" y="16" font-size="13" font-weight="700" fill="currentColor" stroke="none">文</text><text x="14" y="17" font-size="12" font-weight="700" fill="currentColor" stroke="none">A</text></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl8_t">33 γλώσσες</h3>
+                        <p data-i18n="fl8_d">Πλήρως μεταφρασμένο στα Αγγλικά, Ισπανικά, Γαλλικά, Γερμανικά, Ιαπωνικά, Κορεατικά, Κινεζικά, Αραβικά και 25 ακόμη γλώσσες.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="wrap block" id="how">
             <div class="label" data-i18n="sec_how_label">Πώς λειτουργεί</div>
-            <h2 class="title" data-i18n="sec_how_title">Στο δρόμο σε δευτερόλεπτα</h2>
+            <h2 class="title" data-i18n="sec_how_title">Έτοιμο σε δευτερόλεπτα</h2>
             <div class="steps">
-                <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">Εγκαταστήστε από το App Store.</h3><p data-i18n="how1_d">Κατεβάστε το Night Crow. Είναι μια ελαφριά, γνήσια επέκταση για το Safari.</p></div>
+                <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">Εγκαταστήστε από το App Store</h3><p data-i18n="how1_d">Κατεβάστε το Night Crow. Είναι μια ελαφριά, γνήσια επέκταση για το Safari.</p></div>
                 <div class="step"><div class="stepnum">2</div><h3 data-i18n="how2_t">Ενεργοποιήστε στο Safari</h3><p data-i18n="how2_d">Ανοίξτε τις Ρυθμίσεις του Safari, μεταβείτε στις Επεκτάσεις, ενεργοποιήστε το Night Crow και επιτρέψτε το σε ιστοσελίδες.</p></div>
-                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">Αναζήτηση στο σκοτάδι</h3><p data-i18n="how3_d">Κάθε site γίνεται σκούρο αυτόματα. Ρυθμίστε οποιαδήποτε σελίδα απευθείας από το παράθυρο επεκτάσεων της γραμμής εργαλείων.</p></div>
+                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">Περιήγηση στο σκοτάδι</h3><p data-i18n="how3_d">Κάθε site γίνεται σκούρο αυτόματα. Ρυθμίστε οποιαδήποτε σελίδα απευθείας από το παράθυρο επεκτάσεων της γραμμής εργαλείων.</p></div>
             </div>
         </section>
 
@@ -283,10 +348,10 @@
             <div class="label" data-i18n="sec_why_label">Γιατί το Night Crow</div>
             <h2 class="title" data-i18n="sec_why_title">Κατασκευασμένο για χρήστες του Safari</h2>
             <div class="why-grid">
-                <div class="why-card"><h3 data-i18n="why1_t">Οι φωτογραφίες παραμένουν όμορφες</h3><p data-i18n="why1_d">Η λειτουργία Δυναμικός ανακατασκευάζει τα χρώματα αντί να αντιστρέφει ολόκληρη τη σελίδα, ώστε οι εικόνες και τα βίντεο να διατηρούν τα πραγματικά τους χρώματα.</p></div>
+                <div class="why-card"><h3 data-i18n="why1_t">Οι φωτογραφίες παραμένουν όμορφες</h3><p data-i18n="why1_d">Η Δυναμική λειτουργία ανακατασκευάζει τα χρώματα αντί να αντιστρέφει ολόκληρη τη σελίδα, ώστε οι εικόνες και τα βίντεο να διατηρούν τα πραγματικά τους χρώματα.</p></div>
                 <div class="why-card"><h3 data-i18n="why2_t">Διαβάσιμο, πάντα</h3><p data-i18n="why2_d">Ένα ελάχιστο όριο αντίθεσης, βασισμένο στην ανθρώπινη αντίληψη, κρατά το κείμενο ευανάγνωστο σε κάθε ιστότοπο.</p></div>
-                <div class="why-card"><h3 data-i18n="why3_t">Μιλάει τη γλώσσα σας</h3><p data-i18n="why3_d">Πλήρως τοποθετημένο στα 33 γλώσσες: το παράθυρο αναμονής, οι ρυθμίσεις, η εισαγωγή και αυτή η σελίδα.</p></div>
-                <div class="why-card"><h3 data-i18n="why4_t">Μία φορά</h3><p data-i18n="why4_d">Δικό σας για πάντα, στην τιμή μιας γουλιάς καφέ. Χωρίς συνδρομή, χωρίς διαφημίσεις, χωρίς κρυφές χρεώσεις.</p></div>
+                <div class="why-card"><h3 data-i18n="why3_t">Μιλάει τη γλώσσα σας</h3><p data-i18n="why3_d">Πλήρως μεταφρασμένο σε 33 γλώσσες: το αναδυόμενο παράθυρο, οι ρυθμίσεις, η εισαγωγή και αυτή η σελίδα.</p></div>
+                <div class="why-card"><h3 data-i18n="why4_t">Πληρώνετε μία φορά</h3><p data-i18n="why4_d">Δικό σας για πάντα, στην τιμή μιας γουλιάς καφέ. Χωρίς συνδρομή, χωρίς διαφημίσεις, χωρίς κρυφές χρεώσεις.</p></div>
             </div>
         </section>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Night Crow, Tmavost provedená správně</title>
+    <title>Night Crow, Tma, jak má být</title>
     <meta name="description" content="Chytrý, nativní tmavý režim pro každou webovou stránku ve Safari. Dynamické přemapování barev, které zachovává pravdivost fotografií a čitelnost textu, s pra…">
     <link rel="canonical" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/cs/">
     <link rel="alternate" hreflang="ar" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ar/">
@@ -75,7 +75,7 @@
     <link rel="alternate" hreflang="zh-Hant" href="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/zh_TW/">
     <link rel="alternate" hreflang="x-default" href="https://corvusdevs.github.io/Night-Crow-For-Safari/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Night Crow, Tmavost provedená správně">
+    <meta property="og:title" content="Night Crow, Tma, jak má být">
     <meta property="og:description" content="Chytrý, nativní tmavý režim pro každou webovou stránku ve Safari. Dynamické přemapování barev, které zachovává pravdivost fotografií a čitelnost textu, s pra…">
     <meta property="og:image" content="https://corvusdevs.github.io/Night-Crow-For-Safari/og-image.png">
     <meta property="og:url" content="https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/cs/">
@@ -91,7 +91,7 @@
         "operatingSystem": "macOS, iOS, iPadOS",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Browser Extension",
-        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunrise-to-sunset scheduling.",
+        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
         "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
         "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
         "offers": { "@type": "Offer", "price": "0.99", "priceCurrency": "USD" },
@@ -159,6 +159,13 @@
         .glyph { width: 34px; height: 34px; border-radius: 9px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); }
         .glyph svg { width: 19px; height: 19px; }
 
+        .features-list { margin-top: 34px; display: flex; flex-direction: column; gap: 4px; }
+        .feature-row { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start; padding: 16px 18px; border-radius: 12px; }
+        .feature-row:hover { background: rgba(155,108,255,0.06); }
+        .feature-row__icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); box-shadow: 0 0 16px rgba(155,108,255,0.12); }
+        .feature-row__icon svg { width: 20px; height: 20px; }
+        .feature-row__body h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+        .feature-row__body p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
         .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
         .step { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
         .stepnum { width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
@@ -242,7 +249,7 @@
         <section class="wrap hero">
             <div>
                 <h1><span data-i18n="idx_tagline">Tmavý režim pro každou webovou stránku</span><br><span class="grad">Night Crow For Safari</span></h1>
-                <p class="sub" data-i18n="hero_sub">Chytrý, nativní tmavý režim pro každou webovou stránku ve Safari. Dynamické přemapování barev, které zachovává pravdivost fotografií a čitelnost textu, s pravidly pro jednotlivé stránky, předvolbami a plánováním od východu až po západ slunce.</p>
+                <p class="sub" data-i18n="hero_sub">Chytrý, nativní tmavý režim pro každou webovou stránku ve Safari. Dynamické přemapování barev, které zachovává pravdivost fotografií a čitelnost textu, s pravidly pro jednotlivé stránky, předvolbami a plánováním od západu až po východ slunce.</p>
                 <div class="ctas">
                     <a class="cta" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_ios">Stáhnout pro iOS</a>
                     <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac">Stáhnout pro macOS</a>
@@ -256,16 +263,74 @@
 
         <section class="wrap block" id="features">
             <div class="label" data-i18n="sec_features_label">Funkce</div>
-            <h2 class="title" data-i18n="sec_features_title">Tmavost provedená správně</h2>
+            <h2 class="title" data-i18n="sec_features_title">Tma, jak má být</h2>
             <div class="grid">
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">Dynamický režim</h3><p data-i18n="f1_d">Čte vlastní barvy každého webu a přestavuje je do tmavého režimu. Foto zůstávají věrná, text zůstává čitelný.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">Čtyři režimy témat</h3><p data-i18n="f2_d">Dynamické, Filtr, Filtr+ a Statické. Vyberte si jiné pro každou stránku, pokud se vám to lépe hodí.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">Nastavení pro web</h3><p data-i18n="f3_d">Povolte, vypněte nebo jemně upravte jakoukoli stránku, až po jednotlivé sekce, například example.com/docs.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">Pravidla pro jednotlivé weby</h3><p data-i18n="f3_d">Povolte, vypněte nebo jemně upravte jakoukoli stránku, až po jednotlivé sekce, například example.com/docs.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">Chytré plánování</h3><p data-i18n="f4_d">Sledujte vzhled systému, časové okno nebo západ slunce až k východu na vašem místě.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">Předvolby barev</h3><p data-i18n="f5_d">Ztmavit, Půlnoc, Břidlice, Sepiová noc a Vysoký kontrast. Jedním kliknutím pro každý.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">Vlastní CSS a písma</h3><p data-i18n="f6_d">Vlastní CSS pro každou stránku, přepište písmo na stránce a zvyšte ostrost textu pomocí rámečku.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">Už tma</h3><p data-i18n="f7_d">Weby, která mají vlastní tmavý režim, jsou detekovány a ponechány v klidu, bez dvojitého ztmavení.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">Rozpozná tmavé weby</h3><p data-i18n="f7_d">Weby, která mají vlastní tmavý režim, jsou detekovány a ponechány v klidu, bez dvojitého ztmavení.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">Soukromí jako základ</h3><p data-i18n="f8_d">Žádný účet, žádná analýza, žádné sledování. Nic o vašem prohlížení se nikdy nedostane mimo vaše zařízení.</p></div>
+            </div>
+            <div class="features-list">
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-5M4 12V3M12 21v-9M12 8V3M20 21v-3M20 14V3"/><circle cx="4" cy="14" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="16" r="2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl1_t">Jemné doladění posuvníků</h3>
+                        <p data-i18n="fl1_d">Jasnost, kontrast, sepia a černobílý režim, globálně nebo pro jednotlivé stránky, přímo z okna nástrojového panelu.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="9" cy="10" r="2"/><path d="M15 8l3 3-3 3"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl2_t">Chytré zpracování loga</h3>
+                        <p data-i18n="fl2_d">Tmavá loga a ikony jsou analyzována po jednotlivých pixelech a jsou převrácena pouze tehdy, když to pomůže, takže se nikdy nedotýkají fotografie.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h.01M11 15h2M17 15h.01M7 11h.01M11 11h.01M15 11h.01"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl3_t">Klávesová zkratka</h3>
+                        <p data-i18n="fl3_d">Přepněte Night Crow na jakékoli stránky jedním stiskem klávesy. Přeprogramovatelné v nastavení zkratků pro rozšíření Safari.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M12 15l-4-4M12 15l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl4_t">Zálohování a obnovení</h3>
+                        <p data-i18n="fl4_d">Exportujte všechna nastavení do souboru a importujte je na jiném Macu, nebo po přeinstalaci.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl5_t">Čitelné formuláře všude</h3>
+                        <p data-i18n="fl5_d">Vstupy, rozbalovací seznamy, posuvníky i automaticky vyplněná pole nyní dodržují tmavý režim místo toho, aby blikaly bílou nebo žlutou barvou.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><rect x="7" y="8" width="10" height="8" rx="1.5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl6_t">Vytvořeno pro moderní web</h3>
+                        <p data-i18n="fl6_d">Motivy zahrnují i zarámované rámečky a webové komponenty, části moderních webů, které nástroje pro tmavý režim nejčastěji přehlížejí.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl7_t">S ohledem na přístupnost</h3>
+                        <p data-i18n="fl7_d">Respektuje nastavení Zvýšení kontrastu a vynucených barev a udržuje přemapovaný text na minimální hranici vnímatelného kontrastu.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><text x="4" y="16" font-size="13" font-weight="700" fill="currentColor" stroke="none">文</text><text x="14" y="17" font-size="12" font-weight="700" fill="currentColor" stroke="none">A</text></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl8_t">33 jazyků</h3>
+                        <p data-i18n="fl8_d">Plně lokalizováno do angličtiny, španělštiny, francouzštiny, němčiny, japonštiny, korejštiny, čínštiny, arabštiny a dalších 25 jazyků.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -283,10 +348,10 @@
             <div class="label" data-i18n="sec_why_label">Proč Night Crow</div>
             <h2 class="title" data-i18n="sec_why_title">Vytvořeno pro uživatele Safari</h2>
             <div class="why-grid">
-                <div class="why-card"><h3 data-i18n="why1_t">Foto zůstávají krásná</h3><p data-i18n="why1_d">Dynamické mode přestavuje barvy místo invertování celé stránky, takže obrázky a videa si zachovají své skutečné barvy.</p></div>
+                <div class="why-card"><h3 data-i18n="why1_t">Foto zůstávají krásná</h3><p data-i18n="why1_d">Dynamický režim přestavuje barvy místo invertování celé stránky, takže obrázky a videa si zachovají své skutečné barvy.</p></div>
                 <div class="why-card"><h3 data-i18n="why2_t">Čitelný vždy</h3><p data-i18n="why2_d">Percepční práh kontrastu zajistí, že přemapovaný text bude na každém webu čitelný, i když autoři šetří na detailech.</p></div>
-                <div class="why-card"><h3 data-i18n="why3_t">Mluví vaším jazykem</h3><p data-i18n="why3_d">Plně lokalizováno do 33 jazyků: výskumné okno, nastavení, onboarding a tato stránka.</p></div>
-                <div class="why-card"><h3 data-i18n="why4_t">Platit jednou</h3><p data-i18n="why4_d">Váš navždy za cenu šlápnu kávy. Žádná předplatné, žádné reklamy, žádné další nabídky.</p></div>
+                <div class="why-card"><h3 data-i18n="why3_t">Mluví vaším jazykem</h3><p data-i18n="why3_d">Plně lokalizováno do 33 jazyků: vyskakovací okno, nastavení, onboarding a tato stránka.</p></div>
+                <div class="why-card"><h3 data-i18n="why4_t">Platit jednou</h3><p data-i18n="why4_d">Váš navždy za cenu doušku kávy. Žádné předplatné, žádné reklamy, žádné další nabídky.</p></div>
             </div>
         </section>
 

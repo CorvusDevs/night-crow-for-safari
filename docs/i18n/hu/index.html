@@ -91,7 +91,7 @@
         "operatingSystem": "macOS, iOS, iPadOS",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Browser Extension",
-        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunrise-to-sunset scheduling.",
+        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
         "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
         "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
         "offers": { "@type": "Offer", "price": "0.99", "priceCurrency": "USD" },
@@ -159,6 +159,13 @@
         .glyph { width: 34px; height: 34px; border-radius: 9px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); }
         .glyph svg { width: 19px; height: 19px; }
 
+        .features-list { margin-top: 34px; display: flex; flex-direction: column; gap: 4px; }
+        .feature-row { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start; padding: 16px 18px; border-radius: 12px; }
+        .feature-row:hover { background: rgba(155,108,255,0.06); }
+        .feature-row__icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); box-shadow: 0 0 16px rgba(155,108,255,0.12); }
+        .feature-row__icon svg { width: 20px; height: 20px; }
+        .feature-row__body h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+        .feature-row__body p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
         .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
         .step { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
         .stepnum { width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
@@ -242,7 +249,7 @@
         <section class="wrap hero">
             <div>
                 <h1><span data-i18n="idx_tagline">Sötét téma minden weboldalhoz</span><br><span class="grad">Night Crow For Safari</span></h1>
-                <p class="sub" data-i18n="hero_sub">Egy okos, natív sötét mód minden weboldalhoz a Safari-ben. Dinamikus színtérképezés, amely a fotókat hitelesnek és a szöveget olvashatónak tartja, oldalszintű szabályokkal, előbeállításokkal és napkelte-naplemente időzítéssel.</p>
+                <p class="sub" data-i18n="hero_sub">Egy okos, natív sötét mód minden weboldalhoz a Safari-ben. Dinamikus színtérképezés, amely a fotókat hitelesnek és a szöveget olvashatónak tartja, oldalszintű szabályokkal, előbeállításokkal és napnyugta-napkelte időzítéssel.</p>
                 <div class="ctas">
                     <a class="cta" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_ios">Töltse le iOS-re</a>
                     <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac">Töltse le macOS-re</a>
@@ -258,14 +265,72 @@
             <div class="label" data-i18n="sec_features_label">Funkciók</div>
             <h2 class="title" data-i18n="sec_features_title">A sötét mód, ahogy kell.</h2>
             <div class="grid">
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">Dinamikus mód</h3><p data-i18n="f1_d">Olvassa el a webhelyek saját színeit, és újraépítse őket sötét módra. A képek hitelesek maradnak, a szöveg olvasható.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">Négy témamód</h3><p data-i18n="f2_d">Dinamikus, Szűrő, Szűrő+ és Státikus. Válasszon másikat minden egyes oldalon, ha jobban illik.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">A Safari sötét módú bővítményünkkel a weboldalakat sötét témában tálaljuk, így a szemét kevésbé terheli a használata.</h3><p data-i18n="f3_d">Bármely oldalt engedélyezzen, tiltsanak vagy finomhangoljanak, akár egy egyes részre, például a example.com/docs-ra.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">Okos időzítés</h3><p data-i18n="f4_d">Kövesse a rendszeres megjelenését, egy időablakot, vagy a naplementét a napkelő helyszínen.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">Témaelőbeállítások</h3><p data-i18n="f5_d">Sötét mód, Éjfél, Pala, Sárgásbarna éjszaka és Magas kontraszt. Egy kattintás minden egyesre.</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">Egyedi CSS és betűtípusok</h3><p data-i18n="f6_d">Saját CSS-t injektálj oldalanként, fejezz ki a betűtípusokat, és élesítsd a szöveget egy vonallal.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">Dinamikus mód</h3><p data-i18n="f1_d">Beolvassa a webhely saját színeit, és sötét változatban építi újra. A képek hitelesek maradnak, a szöveg olvasható.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">Négy témamód</h3><p data-i18n="f2_d">Dinamikus, Szűrő, Szűrő+ és Statikus. Válasszon másikat minden egyes oldalon, ha jobban illik.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">Webhelyenkénti szabályok</h3><p data-i18n="f3_d">Bármely oldalt engedélyezzen, tiltsanak vagy finomhangoljanak, akár egy egyes részre, például a example.com/docs-ra.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">Okos időzítés</h3><p data-i18n="f4_d">Kövesse a rendszer megjelenését, egy időablakot, vagy napnyugtától napkeltéig a tartózkodási helyén.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">Témaelőbeállítások</h3><p data-i18n="f5_d">Halvány, Éjfél, Pala, Szépia éjszaka és Magas kontraszt. Egy kattintás mindegyikhez.</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">Egyedi CSS és betűtípusok</h3><p data-i18n="f6_d">Saját CSS-t injektálhat oldalanként, felülírhatja az oldal betűtípusait, és körvonallal élesítheti a szöveget.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">Már sötét módra optimalizált</h3><p data-i18n="f7_d">A saját sötét témát szállító oldalak felismerésre kerülnek, és azok érintetlenül maradnak, így nem történik kétszeres sötétedés.</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">Privát a tervezésből</h3><p data-i18n="f8_d">Nincs fiók, nincs elemzés, nincs követés. A böngészési tevékenységedről semmi nem hagyja el az eszközödet.</p></div>
+            </div>
+            <div class="features-list">
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-5M4 12V3M12 21v-9M12 8V3M20 21v-3M20 14V3"/><circle cx="4" cy="14" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="16" r="2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl1_t">Csúszkák finomhangolása</h3>
+                        <p data-i18n="fl1_d">Fényerő, kontraszt, sárgás árnyalat és szürkeárnyalat, globálisan vagy weboldalanként, közvetlenül az eszköztár felugró ablakából.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="9" cy="10" r="2"/><path d="M15 8l3 3-3 3"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl2_t">Intelligens logókezelés</h3>
+                        <p data-i18n="fl2_d">A sötét logók és ikonok képpontokra lebontva elemzésre kerülnek, és csak akkor kerülnek invertálásra, ha ez előnyös, így a fotók érintetlenül maradnak.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h.01M11 15h2M17 15h.01M7 11h.01M11 11h.01M15 11h.01"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl3_t">Billentyűparancs</h3>
+                        <p data-i18n="fl3_d">Bármely oldalon egy billentyűvel kapcsolhatja a Night Crow-t. A Safari bővítmény-gyorsbillentyű beállításaiban átköthető.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M12 15l-4-4M12 15l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl4_t">Mentés és visszaállítás</h3>
+                        <p data-i18n="fl4_d">Exportálja az összes beállítását fájlként, és importálja egy másik Mac-en, vagy újrainstallálás után.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl5_t">Olvasható űrlapok mindenhol</h3>
+                        <p data-i18n="fl5_d">A beviteli mezők, legördülő menük, görgetősávok és még az automatikusan kitöltött mezők is követik a témát, nem pedig fehérre vagy sárgára villannak.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><rect x="7" y="8" width="10" height="8" rx="1.5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl6_t">A modern webre építve</h3>
+                        <p data-i18n="fl6_d">A beágyazott kereteket és webkomponenseket is témázza, a modern oldalak azon részeit, amelyeket a legtöbb sötét mód eszköz kihagy.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl7_t">A hozzáférhetőségre érzékeny</h3>
+                        <p data-i18n="fl7_d">Tiszteletben tartja a Kontraszt növelése és a kényszerített színek beállításokat, és az átszínezett szöveget egy érzékelési kontrasztküszöb felett tartja.</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><text x="4" y="16" font-size="13" font-weight="700" fill="currentColor" stroke="none">文</text><text x="14" y="17" font-size="12" font-weight="700" fill="currentColor" stroke="none">A</text></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl8_t">33 nyelv</h3>
+                        <p data-i18n="fl8_d">Teljesen lokalizálva angol, spanyol, francia, német, japán, koreai, kínai, arab és további 25 nyelven.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -273,8 +338,8 @@
             <div class="label" data-i18n="sec_how_label">Működése</div>
             <h2 class="title" data-i18n="sec_how_title">Másodpercek alatt működésbe lép</h2>
             <div class="steps">
-                <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">Töltsd le az App Store-ból</h3><p data-i18n="how1_d">Töltsön le a Night Crow-t. Ez egy könnyed, natív Safari bővítmény.</p></div>
-                <div class="step"><div class="stepnum">2</div><h3 data-i18n="how2_t">Engedélyezés a Safari-ben</h3><p data-i18n="how2_d">Nyissa meg a Safari Beállítások, menjen az Extensions menübe, kapcsolja be a Night Crow-t, és engedélyezze a weboldalakon való használatát.</p></div>
+                <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">Telepítés az App Store-ból</h3><p data-i18n="how1_d">Töltsön le a Night Crow-t. Ez egy könnyed, natív Safari bővítmény.</p></div>
+                <div class="step"><div class="stepnum">2</div><h3 data-i18n="how2_t">Engedélyezés a Safariban</h3><p data-i18n="how2_d">Nyissa meg a Safari beállításait, lépjen a Bővítmények menübe, kapcsolja be a Night Crow-t, és engedélyezze a weboldalakon.</p></div>
                 <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">Sötétben böngéssz</h3><p data-i18n="how3_d">Minden oldal automatikusan sötétté válik. Bármelyik oldalt közvetlenül az eszköztár felugró ablakából igazíthatja.</p></div>
             </div>
         </section>
@@ -283,17 +348,17 @@
             <div class="label" data-i18n="sec_why_label">Miért a Night Crow</div>
             <h2 class="title" data-i18n="sec_why_title">Safari-felhasználóknak készült</h2>
             <div class="why-grid">
-                <div class="why-card"><h3 data-i18n="why1_t">A képek gyönyörűen maradnak</h3><p data-i18n="why1_d">A Dinamikus mód a színek újragenerálásával helyettesíti az egész oldal felülvilágítását, így a képek és videók eredeti színeiket megőrzik.</p></div>
+                <div class="why-card"><h3 data-i18n="why1_t">A képek gyönyörűen maradnak</h3><p data-i18n="why1_d">A Dinamikus mód újraépíti a színeket az egész oldal invertálása helyett, így a képek és a videók megőrzik eredeti színeiket.</p></div>
                 <div class="why-card"><h3 data-i18n="why2_t">Olvasható, mindig</h3><p data-i18n="why2_d">Egy észlelt kontraszt-alap biztosítja, hogy az újraértelmezett szöveg minden oldalon olvasható legyen, még ott is, ahol a szerzők kompromisszumot követtek.</p></div>
-                <div class="why-card"><h3 data-i18n="why3_t">Beszéli nyelvével</h3><p data-i18n="why3_d">Teljesen lokalizált 33 nyelvre: a felugró ablak, a beállítások, a kezdőbeállítás és ez az oldal.</p></div>
-                <div class="why-card"><h3 data-i18n="why4_t">Egyszeri fizetés</h3><p data-i18n="why4_d">Örökre az Öné egy kávéköltséggel. Nincs előfizetés, nincs hirdetés, nincs extra ajánlat.</p></div>
+                <div class="why-card"><h3 data-i18n="why3_t">Beszéli a nyelvét</h3><p data-i18n="why3_d">Teljesen lokalizált 33 nyelvre: a felugró ablak, a beállítások, a kezdőbeállítás és ez az oldal.</p></div>
+                <div class="why-card"><h3 data-i18n="why4_t">Egyszeri fizetés</h3><p data-i18n="why4_d">Örökre az Öné egy korty kávé áráért. Nincs előfizetés, nincs hirdetés, nincs extra ajánlat.</p></div>
             </div>
         </section>
 
         <!-- page-carousel template v2 (2026-05-27), see ~/.corvus-tools/page-carousel/ -->
         <section id="corvus-carousel" class="corvus-carousel" aria-labelledby="corvus-carousel-title" data-current-slug="Night-Crow-For-Safari">
             <h2 id="corvus-carousel-title" class="corvus-carousel__title" data-i18n="carousel_title">Továbbiak a CorvusDevs-től</h2>
-            <p class="corvus-carousel__sub" data-i18n="carousel_sub">A macOS, iOS és Safari számára, a privátszféra elsőbbséget élvező alkalmazások.</p>
+            <p class="corvus-carousel__sub" data-i18n="carousel_sub">Adatvédelem-központú alkalmazások macOS-re, iOS-re és Safarira.</p>
             <div class="corvus-carousel__viewport">
                 <button class="corvus-carousel__nav corvus-carousel__nav--prev" type="button" aria-label="Previous">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg>

@@ -91,7 +91,7 @@
         "operatingSystem": "macOS, iOS, iPadOS",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Browser Extension",
-        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunrise-to-sunset scheduling.",
+        "description": "A smart, native dark mode for every website in Safari. Dynamic color remapping, per-site rules, presets, and sunset-to-sunrise scheduling.",
         "image": "https://corvusdevs.github.io/Night-Crow-For-Safari/icon.png",
         "url": "https://corvusdevs.github.io/Night-Crow-For-Safari/",
         "offers": { "@type": "Offer", "price": "0.99", "priceCurrency": "USD" },
@@ -159,6 +159,13 @@
         .glyph { width: 34px; height: 34px; border-radius: 9px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); }
         .glyph svg { width: 19px; height: 19px; }
 
+        .features-list { margin-top: 34px; display: flex; flex-direction: column; gap: 4px; }
+        .feature-row { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start; padding: 16px 18px; border-radius: 12px; }
+        .feature-row:hover { background: rgba(155,108,255,0.06); }
+        .feature-row__icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(155,108,255,0.16); display: flex; align-items: center; justify-content: center; color: var(--accent); box-shadow: 0 0 16px rgba(155,108,255,0.12); }
+        .feature-row__icon svg { width: 20px; height: 20px; }
+        .feature-row__body h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+        .feature-row__body p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
         .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
         .step { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
         .stepnum { width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
@@ -233,7 +240,7 @@
             <nav class="nav-links">
                 <a href="#features" data-i18n="sec_features_label">विशेषताएं</a>
                 <a href="#how" data-i18n="sec_how_label">यह कैसे काम करता है</a>
-                <a href="#why" data-i18n="sec_why_label">रात का कौआ क्यों</a>
+                <a href="#why" data-i18n="sec_why_label">Night Crow क्यों</a>
             </nav>
         </div>
     </header>
@@ -242,12 +249,12 @@
         <section class="wrap hero">
             <div>
                 <h1><span data-i18n="idx_tagline">डार्क थीम हर वेबसाइट के लिए</span><br><span class="grad">Night Crow For Safari</span></h1>
-                <p class="sub" data-i18n="hero_sub">Safari के लिए हर वेबसाइट पर एक स्मार्ट, नेटिव डार्क मोड। यह फोटो को सटीक और टेक्स्ट को पढ़ने योग्य बनाए रखने के लिए डायनामिक रंग रीमैपिंग प्रदान करता है, साथ ही वेबसाइट-विशिष्ट नियम, प्रीसेट और सुबह से शाम तक शेड्यूलिंग की सुविधा भी देता है।</p>
+                <p class="sub" data-i18n="hero_sub">Safari के लिए हर वेबसाइट पर एक स्मार्ट, नेटिव डार्क मोड। यह फोटो को सटीक और टेक्स्ट को पढ़ने योग्य बनाए रखने के लिए डायनामिक रंग रीमैपिंग प्रदान करता है, साथ ही वेबसाइट-विशिष्ट नियम, प्रीसेट और शाम से सुबह तक शेड्यूलिंग की सुविधा भी देता है।</p>
                 <div class="ctas">
                     <a class="cta" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_ios">iOS के लिए डाउनलोड करें</a>
-                    <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac">मैकओएस के लिए डाउनलोड करें</a>
+                    <a class="cta secondary" href="https://apps.apple.com/app/id6785353496" data-i18n="hero_cta_mac">macOS के लिए डाउनलोड करें</a>
                 </div>
-                <p class="req" data-i18n="hero_req">मैक ओएस, आईओएस और आईपैडओएस के लिए</p>
+                <p class="req" data-i18n="hero_req">macOS, iOS और iPadOS के लिए</p>
             </div>
             <div class="hero-visual">
                 <img src="../../hero-frame.png" alt="A website themed dark by Night Crow" width="660" height="1434">
@@ -261,32 +268,90 @@
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3 data-i18n="f1_t">डायनामिक मोड</h3><p data-i18n="f1_d">यह प्रत्येक साइट के अपने रंगों को पढ़ता है और उन्हें फिर से गहरे रंग में बनाता है। तस्वीरें सटीक रहती हैं और पाठ पढ़ने योग्य रहता है।</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3 data-i18n="f2_t">चार थीमिंग मोड</h3><p data-i18n="f2_d">डायनामिक, फ़िल्टर, फ़िल्टर+ और स्टैटिक। चुनें, जब भी किसी साइट के लिए यह बेहतर फिट बैठता हो।</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><circle cx="4" cy="12" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="14" r="2"/></svg></div><h3 data-i18n="f3_t">साइट-विशिष्ट नियम</h3><p data-i18n="f3_d">एनएबल, डिसेबल या फाइन-ट्यून करें कोई भी वेबसाइट, जैसे कि example.com/docs का एकल सेक्शन।</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">समय का बुकिंग</h3><p data-i18n="f4_d">अपने सिस्टम दिखावट, समय के खिड़की, या आपके स्थान पर सूर्यास्त से सूर्योदय के अनुसार अपने ब्राउज़र की थीम को अनुकूलित करें।</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3 data-i18n="f4_t">स्मार्ट शेड्यूलिंग</h3><p data-i18n="f4_d">अपने सिस्टम की दिखावट, समय विंडो, या आपके स्थान पर सूर्यास्त से सूर्योदय का पालन करें।</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div><h3 data-i18n="f5_t">थीम प्रीसेट</h3><p data-i18n="f5_d">अंधेरा, मध्यरात्रि, स्लेट, सेपिया रात और उच्च कंट्रास्ट। प्रत्येक के लिए एक क्लिक।</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"/><path d="M13 6l3 3"/></svg></div><h3 data-i18n="f6_t">कस्टम CSS और फ़ॉन्ट</h3><p data-i18n="f6_d">अपनी वेबसाइट के लिए अपना CSS इंजेक्ट करें, पेज फ़ॉन्ट्स को ओवरराइड करें और टेक्स्ट को स्ट्रोक के साथ तेज़ करें।</p></div>
-                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">अब डार्क मोड के लिए सज्ज</h3><p data-i18n="f7_d">वे वेबसाइटें जो अपना स्वयं का डार्क थीम प्रदान करती हैं, उन्हें पहचाना जाता है और उन्हें छोड़ दिया जाता है, जिससे कोई डबल-डार्क नहीं होता।</p></div>
+                <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M15 3.5A9 9 0 0 1 20.5 9"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-i18n="f7_t">पहले से डार्क साइटों की पहचान</h3><p data-i18n="f7_d">वे वेबसाइटें जो अपना स्वयं का डार्क थीम प्रदान करती हैं, उन्हें पहचाना जाता है और उन्हें छोड़ दिया जाता है, जिससे कोई डबल-डार्क नहीं होता।</p></div>
                 <div class="card"><div class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3 data-i18n="f8_t">डिज़ाइन द्वारा निजी</h3><p data-i18n="f8_d">कोई खाता नहीं, कोई विश्लेषण नहीं, कोई ट्रैकिंग नहीं। आपकी ब्राउज़िंग के बारे में कुछ भी आपके डिवाइस से कभी नहीं जाता।</p></div>
+            </div>
+            <div class="features-list">
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-5M4 12V3M12 21v-9M12 8V3M20 21v-3M20 14V3"/><circle cx="4" cy="14" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="20" cy="16" r="2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl1_t">स्लाइडर को परिष्कृत करें</h3>
+                        <p data-i18n="fl1_d">चमक, कंट्रास्ट, सीपिया, और ग्रेस्केल, वैश्विक स्तर पर या किसी भी साइट के लिए, टूलबार पॉपअप से ही।</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="9" cy="10" r="2"/><path d="M15 8l3 3-3 3"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl2_t">स्मार्ट लोगो प्रबंधन</h3>
+                        <p data-i18n="fl2_d">डार्क लोगो और आइकन को पिक्सेल-बाय-पिक्सेल विश्लेषित किया जाता है और केवल तभी उल्टा किया जाता है जब इससे मदद मिले, ताकि फोटो को कभी नहीं छुआ जाए।</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h.01M11 15h2M17 15h.01M7 11h.01M11 11h.01M15 11h.01"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl3_t">कीबोर्ड शॉर्टकट</h3>
+                        <p data-i18n="fl3_d">Night Crow को किसी भी पेज पर एक कीस्ट्रोक से टॉगल करें। इसे Safari की एक्सटेंशन शॉर्टकट सेटिंग्स में दोबारा असाइन किया जा सकता है।</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M12 15l-4-4M12 15l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl4_t">बैकअप और पुनर्स्थापना</h3>
+                        <p data-i18n="fl4_d">सभी सेटिंग्स को एक फ़ाइल में निर्यात करें और उन्हें किसी अन्य Mac पर या पुनः इंस्टॉल करने के बाद आयात करें।</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl5_t">हर जगह पठनीय फ़ॉर्म</h3>
+                        <p data-i18n="fl5_d">इनपुट, ड्रॉपडाउन, स्क्रॉलबार और ऑटोफ़िल किए गए फ़ील्ड भी थीम का पालन करते हैं, सफ़ेद या पीले रंग में नहीं चमकते।</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><rect x="7" y="8" width="10" height="8" rx="1.5"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl6_t">आधुनिक वेब के लिए बनाया गया</h3>
+                        <p data-i18n="fl6_d">थीम अब एम्बेडेड फ्रेम और वेब कंपोनेंट्स को भी कवर करती है, वे वेबसाइट के उन हिस्सों को जो आधुनिक साइट्स का हिस्सा हैं और जिन्हें अक्सर डार्क-मोड टूल्स छोड़ देते हैं।</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl7_t">एक्सेसिबिलिटी के प्रति सजग</h3>
+                        <p data-i18n="fl7_d">'कंट्रास्ट बढ़ाएँ' और फ़ोर्स्ड-कलर्स सेटिंग्स का सम्मान करता है, और री-मैप किए गए टेक्स्ट को न्यूनतम अवधारणीय कंट्रास्ट पर बनाए रखता है।</p>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><text x="4" y="16" font-size="13" font-weight="700" fill="currentColor" stroke="none">文</text><text x="14" y="17" font-size="12" font-weight="700" fill="currentColor" stroke="none">A</text></svg></div>
+                    <div class="feature-row__body">
+                        <h3 data-i18n="fl8_t">33 भाषाएं</h3>
+                        <p data-i18n="fl8_d">सभी भाषाओं में पूरी तरह से स्थानीयकृत: अंग्रेजी, स्पेनिश, फ्रेंच, जर्मन, जापानी, कोरियाई, चीनी, अरबी और 25 और भी।</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="wrap block" id="how">
             <div class="label" data-i18n="sec_how_label">यह कैसे काम करता है</div>
-            <h2 class="title" data-i18n="sec_how_title">सेकंडों में सक्षम और चलने के लिए</h2>
+            <h2 class="title" data-i18n="sec_how_title">सेकंडों में तैयार</h2>
             <div class="steps">
-                <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">App स्टोर से  इंस्टॉल करें</h3><p data-i18n="how1_d">Night Crow डाउनलोड करें। यह एक हल्का, नेटिव Safari एक्सटेंशन है।</p></div>
+                <div class="step"><div class="stepnum">1</div><h3 data-i18n="how1_t">App Store से इंस्टॉल करें</h3><p data-i18n="how1_d">Night Crow डाउनलोड करें। यह एक हल्का, नेटिव Safari एक्सटेंशन है।</p></div>
                 <div class="step"><div class="stepnum">2</div><h3 data-i18n="how2_t">सफारी में सक्षम करें</h3><p data-i18n="how2_d">Safari के सेटिंग्स खोलें, एक्सटेंशन पर जाएं, Night Crow को ऑन करें और इसे वेबसाइटों पर अनुमति दें।</p></div>
-                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">अंधेरे में ब्राउज़ करें</h3><p data-i18n="how3_d">हर वेबसाइट अपने आप अंधेरे में बदल जाती है। टूलबार पॉपअप से किसी भी पेज को तुरंत अंधेरे में बदलें।</p></div>
+                <div class="step"><div class="stepnum">3</div><h3 data-i18n="how3_t">अंधेरे में ब्राउज़ करें</h3><p data-i18n="how3_d">हर वेबसाइट अपने आप डार्क हो जाती है। टूलबार पॉपअप से किसी भी पेज को ट्यून करें।</p></div>
             </div>
         </section>
 
         <section class="wrap block" id="why">
-            <div class="label" data-i18n="sec_why_label">रात का कौआ क्यों</div>
+            <div class="label" data-i18n="sec_why_label">Night Crow क्यों</div>
             <h2 class="title" data-i18n="sec_why_title">सफारी उपयोगकर्ताओं के लिए बनाया गया</h2>
             <div class="why-grid">
                 <div class="why-card"><h3 data-i18n="why1_t">फोटो सुंदर रहते हैं</h3><p data-i18n="why1_d">डायनामिक मोड पूरे पेज को उल्टा नहीं करता, बल्कि रंगों को फिर से बनाता है, ताकि तस्वीरों और वीडियो अपने असली रंग बनाए रख सकें।</p></div>
                 <div class="why-card"><h3 data-i18n="why2_t">पढ़ने में आसान, हमेशा</h3><p data-i18n="why2_d">एक न्यूनतम कंट्रास्ट सीमा हर साइट पर री-मैप किए गए टेक्स्ट को पढ़ने योग्य बनाए रखती है, भले ही साइट बनाने वालों ने ध्यान न दिया हो।</p></div>
-                <div class="why-card"><h3 data-i18n="why3_t">अपनी भाषा बोलें</h3><p data-i18n="why3_d">33 भाषाओं में पूरी तरह से स्थानीयकृत: पॉप-अप, सेटिंग्स, ऑनबोर्डिंग और यह पृष्ठ।</p></div>
-                <div class="why-card"><h3 data-i18n="why4_t">एक बार भुगतान करें</h3><p data-i18n="why4_d">आपका हमेशा के लिए कॉफी की एक कप की कीमत पर। कोई सदस्यता नहीं, कोई विज्ञापन नहीं, कोई अतिरिक्त खरीदारी नहीं।</p></div>
+                <div class="why-card"><h3 data-i18n="why3_t">आपकी भाषा बोलता है</h3><p data-i18n="why3_d">33 भाषाओं में पूरी तरह से स्थानीयकृत: पॉप-अप, सेटिंग्स, ऑनबोर्डिंग और यह पृष्ठ।</p></div>
+                <div class="why-card"><h3 data-i18n="why4_t">एक बार भुगतान करें</h3><p data-i18n="why4_d">कॉफी के एक घूंट की कीमत पर हमेशा के लिए आपका। कोई सदस्यता नहीं, कोई विज्ञापन नहीं, कोई अतिरिक्त खरीदारी नहीं।</p></div>
             </div>
         </section>
 
