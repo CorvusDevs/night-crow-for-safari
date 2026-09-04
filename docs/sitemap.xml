@@ -132,4 +132,39 @@
     <loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/zh_TW/</loc>
     <priority>0.8</priority>
   </url>
+  <!-- LOCALIZED_CHANGELOG:START -->
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ar/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/cs/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/da/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/de/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/el/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/es/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/es-MX/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/fi/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/fr/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/he/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/hi/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/hu/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/id/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/it/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ja/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ko/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ms/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/nb/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/nl/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/pl/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/pt-BR/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/pt-PT/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ro/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/ru/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/sk/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/sv/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/th/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/tr/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/uk/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/vi/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/zh-Hans/changelog.html</loc></url>
+  <url><loc>https://corvusdevs.github.io/Night-Crow-For-Safari/i18n/zh-Hant/changelog.html</loc></url>
+  <!-- LOCALIZED_CHANGELOG:END -->
 </urlset>
