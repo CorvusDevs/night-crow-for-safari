@@ -5,7 +5,7 @@
    i18n pattern. */
 (function () {
   function init() {
-    if (typeof T !== 'object' || !T.en) return; // translations.js not loaded
+    if (typeof T !== 'object') return; // translations.js not loaded
     var LS_KEY = 'nightcrow_docs_lang';
 
     // [code, endonym (native name), iso2 country for flag asset]. 'auto' first.
@@ -92,7 +92,7 @@
     }
     function applyLang(sel) {
       var lang = effectiveLang(sel);
-      var dict = T[toStorageLang(lang)] || T.en;
+      var dict = T[toStorageLang(lang)] || {};
       var nodes = document.querySelectorAll('[data-i18n]');
       for (var i = 0; i < nodes.length; i++) {
         var key = nodes[i].getAttribute('data-i18n');
